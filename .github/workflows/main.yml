@@ -20,8 +20,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker Image
-      run: docker build -t faridasaad_2023040173:latest .
+      run: docker build -t farida748/faridasaad_2023040173:latest .
 
     - name: Push Docker Image
-      run: docker push faridasaad_2023040173:latest
+      run: docker push farida748/faridasaad_2023040173:latest
       
