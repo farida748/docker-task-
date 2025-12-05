@@ -24,3 +24,4 @@ jobs:
 
     - name: Push Docker Image
       run: docker push faridasaad_2023040173:latest
+      
