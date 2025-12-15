@@ -1,15 +1,10 @@
-FROM python:3.12-slim
-
-
+FROM python:3.12-alpine
 
 WORKDIR /app
-
-
-COPY app.py .
-
+COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt || echo "No requirements.txt"
 
+CMD ["python", "app.py"]
 
-CMD ["python3", "app.py"]
 
